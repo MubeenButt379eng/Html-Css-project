@@ -1,0 +1,167 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:20px 20px;
+    background-color: bisque;
+    flex-wrap: wrap;
+}
+#nav h3{
+    background-color: black;
+    color:white;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius:50px;
+    margin-left:3px ;
+}
+
+#intro{
+    height: 50%;
+    width: 100%;
+    background-color: bisque;
+    padding:50px 60px;
+}
+#intro h1{
+    font-size:80px;
+    line-height: 90px;
+    letter-spacing: -3px;
+}
+#place{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+#place h3 , #place h4{
+   font-size: 20px;
+   font-weight: 600;
+   margin-top: 10px;
+}
+#hero-img{
+    height: 87%;
+    width: 100%;
+    background-image:url("https://cdn.prod.website-files.com/64589fb989b2b3e8783db8c8/645cad129d3885d86c115c7f_project-02-p-800.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+}
+#about{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+    flex-wrap: wrap;
+}
+#about h2{
+    width:60% ;
+    font-size: 50px;
+    line-height:60px;
+}
+#about-2{
+    width:35%;
+    height:auto;
+    padding: 0 40px;
+    border-left: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    font-size: 25px;
+}
+#icon i{
+    background-color: black;
+    color:white;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width:1024px){
+    #intro h1{
+        font-size: 60px;
+        line-height: 70px;
+    }
+    #about h2{
+        font-size: 40px;
+        line-height:50px;
+    }
+    #about-2{
+        font-size: 20px;
+    }
+}
+@media (max-width:768px){
+    #intro{
+        padding:30px;
+    }
+    #intro h1{
+        font-size: 45px;
+        line-height: 55px;
+    }
+    #place{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #about{
+        flex-direction: column;
+        padding: 30px;
+    }
+    #about h2{
+        width: 100%;
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+    #about-2{
+        width:100%;
+        border-left: none;
+        border-top: 3px solid black;
+        padding: 20px 0;
+        font-size: 18px;
+    }
+}
+@media (max-width:480px){
+    #nav{
+        justify-content: center;
+    }
+    #nav h3{
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+    #intro h1{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+    #place h3 , #place h4{
+        font-size: 16px;
+    }
+    #about h2{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    #about-2{
+        font-size: 16px;
+    }
+    #icon i{
+        font-size: 22px;
+        padding: 4px;
+    }
+}
