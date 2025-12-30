@@ -1,0 +1,307 @@
+:root{
+    --gray:#212121;
+    --green:#009660;
+    --white:#e9e9e9;
+    --black:#0c0c0c;
+    --lGray:#929292;
+}
+@font-face {
+    font-family: new;
+    src: url(./NeueMachina-Regular_DQCmjH1st.ttf);
+}
+@font-face {
+    font-family: hell;
+    src: url(./Helvetica_NTUXwLmxSC.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color:var(--black);
+    color:var(--white)
+}
+.green{
+    color:var(--green)
+}
+.gray{
+    color:var(--gray)
+}
+.lGray{
+    color:var(--lGray)
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px 40px;
+    position: fixed;
+    width: 100%;
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    
+}
+.nav1 h4{
+    font-family: 'new';
+    font-size:20px;
+    font-weight: 400;
+}
+.nav1 img{
+    height:40px;
+
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+.nav2 img{
+    height:35px;
+    border-radius: 50%;
+    width: 35px;
+}
+.nav2 h4{
+    font-family: 'new';
+    font-size:17px;
+    font-weight: 400;
+}
+.ri-notification-fill{
+    font-size: 15px;
+}
+
+.nav3{
+    display:none;
+    align-items: center;
+    gap:25px;
+     
+}
+.nav3 img{
+    height:30px;
+    border-radius: 50%;
+    width: 30px;
+}
+.nav3 h4{
+    font-family: 'new';
+    font-size:17px;
+    font-weight: 400;
+}
+@media (max-width:600px) {
+    nav{
+        padding:13px 30px;
+        
+    }
+    .nav1 img{
+        height:30px;
+    }
+    .nav1 h4{
+        font-size:12px;
+    }
+    .nav2 {
+        display: none;
+    }
+    .nav3{
+        display: flex;
+    }
+}
+main{
+    padding-top: 80px;
+}
+.section1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:0 40px;
+    font-family: hell;
+}
+.section1 .left{
+  
+    width: 40%;
+}
+.section1 .left h1{
+    font-size:40px;
+}
+.section1 .left .tags{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+.left .price .lGray{
+    font-size: 22px;
+    text-decoration: line-through;
+}
+.section1 .left .tags h4{
+    background-color: var(--gray);
+      padding: 5px 15px;
+      border-radius: 4px;
+      white-space: nowrap;
+}
+.left .price{
+    font-size: 30px;
+}
+.section1 .left .cta{
+ display: flex;
+ align-items: center;   
+}
+ .offer-section {
+  background: linear-gradient(180deg, #0b0b0b, #000);
+  
+  border-radius: 12px;
+  color: white;
+  max-width: 700px;
+  font-family: hell;
+}
+ 
+.offer-section h5 {
+  color: #00f5a0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+ 
+.cta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+ 
+.btn-buy {
+  background-color: #059669;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: #047857;
+}
+
+ 
+.btn-view {
+  background-color: #3f3f3f;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-view:hover {
+  background-color: #525252;
+}
+ 
+.offer-section h6 {
+  font-size: 14px;
+  color: #d1d5db;
+  font-weight: normal;
+}
+
+ 
+.offer-section h6 span {
+  color: #00f5a0;
+  font-weight: bold;
+}
+
+
+.section1 .right{
+    width: 47%;
+}
+.section1 .right .right-in{
+    width: 100%;
+ 
+    overflow: hidden;
+}
+.section1 .right .right-in .image{
+    width: 100%;
+}
+.section1 .right .right-in .image img{
+    width:100%;
+}
+.section1 .right .right-in .image-bottom{
+    padding: 0 15px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: var(--gray);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:20px;
+    border: 5px;
+    
+}
+.right-in .image-bottom h4{
+    background-color:#151515;
+    padding:10px;
+    width:45%;
+    border-radius: 5px;
+    font-weight: 100;
+}
+@media(max-width:1400px){
+    .section1 .left h1{
+    font-size: 3.5vw;
+}
+}
+@media(max-width:800px){
+    main{
+        padding-top: 10vw;
+    }
+    .section1{
+        flex-direction: column-reverse;
+        padding:15px 4vw;
+    }
+    .section1 .left{
+        width: 100%;
+        margin-top:30px; 
+    }
+    .section1 .left h1{
+    font-size: 30px;
+}
+    .section1 .right .right-in{
+        width:100%;
+    }
+}
+
+@media(max-width:600px){
+    .section1 .left h1{
+    font-size: 5vw;
+}
+}
+.section2{
+   padding:100px 70px;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.section2 h1{
+    position:relative;
+    font-family: hell;
+    font-size: 130px;
+    background-image: url(https://ik.imagekit.io/sheryians/Aptitude%20&%20Reasoning/mask%20Large_ZB4lGN8hWZ.png);
+    background-size: cover;
+    background-clip: text;
+    color:transparent
+}
+.section2 h1.bloom{
+    position: absolute;
+    filter:blur(80px)
+}
+.section2 h3{
+    font-size: 45px;
+    font-family: hell;
+    text-transform: capitalize;
+}
